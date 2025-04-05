@@ -1,0 +1,262 @@
+body{
+  background-color: #FABC3F;
+  font-family: cairo;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 5px;
+  font-size: 1.15rem;
+  padding: 0 0 0 20px;
+}
+
+header button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #821131;
+  width: 40%;
+  padding: 15px;
+  box-shadow: 3px 3px 7px 0px rgb(101 101 101);
+  margin-right: 20px;
+}
+
+nav div {
+  background-color: #5f3402;
+  padding: 5px;
+  border-radius: 50%;
+  width: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* man draw */
+
+.man-draw {
+  position: relative;
+  height: 30vh;
+  margin-top: 38px;
+}
+
+.man-draw #man-1 {
+  width: 42%;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 7%;
+  visibility: hidden;
+}
+.man-draw #man-2 {
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 104px;
+  width: 51%;
+  left: 13%;
+  visibility: hidden;
+}
+.man-draw #man-3 {
+  width: 25%;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  bottom: 71%;
+  left: 37%;
+  visibility: hidden;
+}
+.man-draw #man-4 {
+  background-color: black;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 67%;
+  width: 6%;
+  left: 57%;
+  height: 5px;
+  visibility: hidden;
+}
+.man-draw #man-5 {
+  width: 10%;
+  border-radius: 50%;
+  height: 15%;
+  background-color: white;
+  position: absolute;
+  border: red solid;
+  bottom: 47%;
+  left: 54%;
+  visibility: hidden;
+}
+.man-draw #man-6 {
+  background-color: #ff0000;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 36%;
+  width: 14%;
+  left: 53%;
+  height: 5px;
+  visibility: hidden;
+}
+.man-draw #man-7 {
+  background-color: #ff0000;
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: 39%;
+  width: 8%;
+  left: 59%;
+  height: 5px;
+  visibility: hidden;
+}
+.man-draw #man-8 {
+  background-color: #ff0000;
+  position: absolute;
+  transform: rotate(135deg);
+  bottom: 39%;
+  width: 8%;
+  left: 53%;
+  height: 5px;
+  visibility: hidden;
+}
+.man-draw #man-9 {
+  background-color: #ff0000;
+  position: absolute;
+  transform: rotate(135deg);
+  bottom: 22%;
+  width: 8%;
+  left: 53%;
+  height: 5px;
+  visibility: hidden;
+}
+.man-draw #man-10 {
+  background-color: #ff0000;
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: 22%;
+  width: 8%;
+  left: 59%;
+  height: 5px;
+  visibility: hidden;
+}
+
+.man-draw div .active {
+  display: block;
+}
+
+/* clue */
+
+.clue {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+  gap: 5px;
+  background-color: #e5151559;
+  padding: 5px 5px 5px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.clue div {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/* Answer */
+
+.answer {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 10px;
+}
+
+.answer div {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(241, 60, 60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  color: white;
+  font-weight: bold;
+}
+
+.answer div.active {
+  background-color: #0075ff;
+}
+
+/* keyboard */
+
+.keyboard {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 10px;
+  margin-top: 50px;
+}
+
+.keyboard div {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #E85C0D;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+}
+
+.keyboard div.active{
+  pointer-events: none;
+  background-color: black;
+}
+
+
+
+/* change */
+
+.change{
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+
+.change button{
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #821131;
+  padding: 20px;
+  width: 40%;
+}

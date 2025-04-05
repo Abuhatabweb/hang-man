@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hang man game</title>
+    <link rel="stylesheet" href="stylear.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p>النتيجه:</p>
+        <div class="score"></div>
+      </nav>
+      <button onclick="resetScore()">تصفير النتيجه</button>
+    </header>
+
+    <section class="man-draw">
+      <div id="man-1"></div>
+      <div id="man-2"></div>
+      <div id="man-3"></div>
+      <div id="man-4"></div>
+      <div id="man-5"></div>
+      <div id="man-6"></div>
+      <div id="man-7"></div>
+      <div id="man-8"></div>
+      <div id="man-9"></div>
+      <div id="man-10"></div>
+    </section>
+
+    <section class="clue">
+      <p>الكلمه تنتمي الي :</p>
+      <div class="category"></div>
+    </section>
+
+    <section class="answer"></section>
+
+    <section class="keyboard active"></section>
+
+    <section class="change">
+      <button onclick="changeItem()">تغيير الكلمه</button>
+      <button onclick="start()">تغيير المجموعه</button>
+      <button onclick="english()">Arabic version</button>
+    </section>
+
+    <script src="scriptar.js"></script>
+  </body>
+</html>

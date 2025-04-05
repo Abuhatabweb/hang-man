@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hang man game</title>
+    <link rel="stylesheet" href="app/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p>Score:</p>
+        <div class="score"></div>
+      </nav>
+      <button onclick="resetScore()">Reset Score</button>
+    </header>
+
+    <section class="man-draw">
+      <div id="man-1"></div>
+      <div id="man-2"></div>
+      <div id="man-3"></div>
+      <div id="man-4"></div>
+      <div id="man-5"></div>
+      <div id="man-6"></div>
+      <div id="man-7"></div>
+      <div id="man-8"></div>
+      <div id="man-9"></div>
+      <div id="man-10"></div>
+    </section>
+
+    <section class="clue">
+      <p>The word is a :</p>
+      <div class="category"></div>
+    </section>
+
+    <section class="answer"></section>
+
+    <section class="keyboard active"></section>
+
+    <section class="change">
+      <button onclick="changeItem()">Change Word</button>
+      <button onclick="start()">Cange Category</button>
+      <button onclick="arabic()">Arabic version</button>
+    </section>
+
+    <script src="app/script.js"></script>
+  </body>
+</html>
