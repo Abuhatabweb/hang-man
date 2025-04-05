@@ -28,6 +28,10 @@ let charts = [
   "ه",
   "و",
   "ي",
+  "ى",
+  "ة",
+  "ئ",
+  "ء",
   "space",
 ];
 let apiData = [];
@@ -148,6 +152,7 @@ keyboard.addEventListener("click", (e) => {
       }
 
       if (right == mainItem.length) {
+        alert(`حليتها صح هي فعلا ${mainItem}`)
         score = score + 1;
         toLocalStorage();
         addScore();
@@ -155,6 +160,7 @@ keyboard.addEventListener("click", (e) => {
       }
     } else {
       if (mistake == 10) {
+        alert(`للاسف غلط الكلمه كانت ${mainItem}`)
         toLocalStorage();
         addScore();
         changeItem();
