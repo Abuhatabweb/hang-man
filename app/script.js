@@ -146,6 +146,7 @@ keyboard.addEventListener("click", (e) => {
       }
 
       if (right == mainItem.length) {
+        alert(`you got it right its ${mainItem}`)
         score = score + 1;
         toLocalStorage();
         addScore();
@@ -153,6 +154,7 @@ keyboard.addEventListener("click", (e) => {
       }
     } else {
       if (mistake == 10) {
+        alert(`you got it wrong its ${mainItem}`)
         toLocalStorage();
         addScore();
         changeItem();
