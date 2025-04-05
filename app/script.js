@@ -191,5 +191,5 @@ function check() {
 }
 
 function arabic() {
-  window.location = "https://abuhatabweb.github.io/hang-man/app/ar.html/";
+  window.location = "https://abuhatabweb.github.io/hang-man/app/ar";
 }
