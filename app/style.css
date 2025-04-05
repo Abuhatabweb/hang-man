@@ -1,3 +1,8 @@
+body{
+  background-color: #FABC3F;
+  font-family: cairo;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -24,18 +29,18 @@ header button {
   border: none;
   border-radius: 5px;
   color: white;
-  background-color: blueviolet;
+  background-color: #821131;
   width: 40%;
   padding: 15px;
-  box-shadow: -2px 2px 7px 0px rgb(101 101 101);
+  box-shadow: 3px 3px 7px 0px rgb(101 101 101);
   margin-right: 20px;
 }
 
 nav div {
-  background-color: #858282;
+  background-color: #5f3402;
   padding: 5px;
   border-radius: 50%;
-  width: 9%;
+  width: 14%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,13 +166,15 @@ nav div {
   align-items: center;
   margin: 20px 0px 20px 0px;
   gap: 5px;
-  background-color: #8a2be257;
+  background-color: #e5151559;
   padding: 5px 5px 5px 20px;
   border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .clue div {
-  color: #0a0d95;
+  color: #ff0000;
   font-weight: bold;
 }
 
@@ -187,15 +194,17 @@ nav div {
   width: 50px;
   height: 50px;
   border-radius: 5px;
-  background-color: #858282;
+  background-color: rgb(241, 60, 60);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: larger;
+  color: white;
+  font-weight: bold;
 }
 
 .answer div.active {
-  background-color: #7ee97e;
+  background-color: #0075ff;
 }
 
 /* keyboard */
@@ -215,7 +224,9 @@ nav div {
   width: 50px;
   height: 50px;
   border-radius: 5px;
-  background-color: #3647e298;
+  background-color: #E85C0D;
+  color: white;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
