@@ -153,7 +153,6 @@ keyboard.addEventListener("click", (e) => {
       }
     } else {
       if (mistake == 10) {
-        // window.location = "http://127.0.0.1:5500/";
         toLocalStorage()
         addScore()
         changeItem()
@@ -185,7 +184,7 @@ function fromLocalStorage() {
 }
 
 function check(){
-    if(mistake >= 5){
+    if(mistake >= 5 && right!= mainItem.length){
         score = score -1 
         toLocalStorage()
     }
