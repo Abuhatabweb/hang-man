@@ -192,6 +192,6 @@ function check() {
   }
 }
 
-function araenglishbic() {
+function english() {
   window.location = "https://abuhatabweb.github.io/hang-man";
 }
