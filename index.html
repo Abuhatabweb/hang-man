@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hang man game</title>
+    <link rel="stylesheet" href="app/style.css" />
+    <link rel="stylesheet" href="app/animation.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p>Score:</p>
+        <div class="score"></div>
+      </nav>
+      <button onclick="resetScore()">Reset Score</button>
+    </header>
+
+    <div class="right">
+      <div class="container">
+        <p class="right-message"></p>
+        <button onclick="changeItem()">Next Word</button>
+      </div>
+      <!-- Animation -->
+      <div
+        aria-label="Orange and tan hamster running in a metal wheel"
+        role="img"
+        class="wheel-and-hamster"
+      >
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+
+    <div class="wrong">
+      <div class="container">
+        <p class="wrong-message"></p>
+        <button onclick="changeItem()">Next word</button>
+      </div>
+      <!-- From Uiverse.io by BlackisPlay -->
+      <div id="ghost">
+        <div id="red">
+          <div id="pupil"></div>
+          <div id="pupil1"></div>
+          <div id="eye"></div>
+          <div id="eye1"></div>
+          <div id="top0"></div>
+          <div id="top1"></div>
+          <div id="top2"></div>
+          <div id="top3"></div>
+          <div id="top4"></div>
+          <div id="st0"></div>
+          <div id="st1"></div>
+          <div id="st2"></div>
+          <div id="st3"></div>
+          <div id="st4"></div>
+          <div id="st5"></div>
+          <div id="an1"></div>
+          <div id="an2"></div>
+          <div id="an3"></div>
+          <div id="an4"></div>
+          <div id="an5"></div>
+          <div id="an6"></div>
+          <div id="an7"></div>
+          <div id="an8"></div>
+          <div id="an9"></div>
+          <div id="an10"></div>
+          <div id="an11"></div>
+          <div id="an12"></div>
+          <div id="an13"></div>
+          <div id="an14"></div>
+          <div id="an15"></div>
+          <div id="an16"></div>
+          <div id="an17"></div>
+          <div id="an18"></div>
+        </div>
+        <div id="shadow"></div>
+      </div>
+    </div>
+
+    <section class="man-draw">
+      <div id="man-1"></div>
+      <div id="man-2"></div>
+      <div id="man-3"></div>
+      <div id="man-4"></div>
+      <div id="man-5"></div>
+      <div id="man-6"></div>
+      <div id="man-7"></div>
+      <div id="man-8"></div>
+      <div id="man-9"></div>
+      <div id="man-10"></div>
+    </section>
+
+    <section class="clue">
+      <p>The word is a :</p>
+      <div class="category"></div>
+    </section>
+
+    <section class="answer"></section>
+
+    <section class="keyboard active"></section>
+
+    <section class="change">
+      <button onclick="changeItem()">Change Word</button>
+      <button onclick="start()">Cange Category</button>
+      <button onclick="arabic()">Arabic version</button>
+    </section>
+
+    <div class="block">Use Smart Phone</div>
+    <script src="app/script.js"></script>
+  </body>
+</html>
